@@ -1,0 +1,142 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    padding: 10px 20px;
+    background: #000 !important;
+    color: white !important;
+
+}
+
+.navbar .navbar_title {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    font-weight: 600;
+    color: white !important;
+
+}
+
+
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+
+}
+
+.logo {
+    max-height: 50px;
+    object-fit: fill;
+}
+
+.navbar-right {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* navigation buttons styles */
+
+.nav-item-mod .nav-link {
+    padding-inline: 40px;
+    min-width: 120px;
+    border-radius: 30px;
+    transition: 500ms;
+}
+
+.nav-item-mod .nav-link:hover {
+    background-color: #444;
+
+}
+
+.nav-item .login-icon-link {
+    padding: auto;
+
+    border-radius: 30px;
+    transition: 500ms;
+}
+
+.nav-item .login-icon-link:hover {
+    background-color: #444;
+
+}
+
+.navbar-center-button {
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+.navbar-toggler-icon {
+    color: white;
+    border-radius: 1px;
+    border-color: #fff;
+
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+    /* Space between nav items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.login-icon {
+    font-size: 25px;
+}
+
+/* * Dropdown styles */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: #000;
+    border: 1px solid #fff;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.dropdown-item {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: 500ms;
+}
+
+.dropdown-item:hover {
+    background-color: #444;
+    color: white;
+}
+
+/* Show the dropdown when hovering over the login icon */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+
+@media (min-width:1000px) {
+
+    .navbar-center-button {
+        display: none;
+    }
+
+}

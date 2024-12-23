@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the app takes full height */
+}
+
+h1{
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-size: 48px;
+    font-weight: bold;
+    color: white !important;
+}
+h2{
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-size: 36px;
+    font-weight: bold;
+    color: white !important;
+}
+h4{
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: white !important;
+}
+.body-text{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 400px;
+    color: white !important;
+}
+.body-text-bold{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 600px;
+    color: white !important;
+}
+.text{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400px;
+    color: white !important;
+}
+body{
+    background: #0D1117;
+    color: white;
+
+}
