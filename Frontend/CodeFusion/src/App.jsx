@@ -1,5 +1,6 @@
 import React from 'react'
-import Header from './components/header/header';
+import Header from './components/Header/Header';
+import MainPage from './pages/Main Page/MainPage';
 import Footer from './components/Footer/Footer';
 
 
@@ -9,7 +10,7 @@ function App() {
     
       <Header />
       
-
+      <MainPage />
       
       <Footer />
     

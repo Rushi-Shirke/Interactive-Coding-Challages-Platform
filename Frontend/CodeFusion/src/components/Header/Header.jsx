@@ -3,7 +3,6 @@ import '../../assets/styles/global.css';
 import './Header.css';
 import logo from '../../assets/images/logo_cf.png';
 import { FaBars } from 'react-icons/fa';
-
 import { MdPerson } from "react-icons/md";
 function Header() {
 
