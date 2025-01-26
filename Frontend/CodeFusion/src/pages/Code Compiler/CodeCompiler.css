@@ -1,0 +1,56 @@
+.custom-button{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #363636;
+    min-width: 100px;
+    color: white;
+    margin: 0 5px;
+    transition: 500ms;
+}
+.custom-button:hover{
+    background-color: green;
+    
+}
+
+/* CodeCompiler.css */
+
+
+
+.d-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1; /* Make sure the question takes up available space */
+}
+
+.next-prev {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.left-icon {
+    font-size: 24px; /* Adjust the size of the icon */
+    color: white; /* Change color */
+    cursor: pointer; /* Make it look clickable */
+    margin-right: 10px; /* Optional: Add space between the icon and the button */
+}
+.left-icon:hover{
+    color: green;
+}
+
+.question-description {
+    width: 100%;
+    margin-top: 20px; /* Optional: Space between the question and description */
+    color: white;
+}
+
+
+
+

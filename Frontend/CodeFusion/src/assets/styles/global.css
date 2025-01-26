@@ -44,7 +44,7 @@ h4{
     font-weight: 600px;
     color: white !important;
 }
-.text{
+.text-16{
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
     font-size: 16px;
@@ -52,7 +52,7 @@ h4{
     color: white !important;
 }
 body{
-    background: #0D1117;
+    background: #0D1117 !important;
     color: white;
 
 }
