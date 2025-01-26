@@ -1,4 +1,4 @@
-import React from 'react';
+
 import logo from '../../assets/images/CodeFusionLogo.png';
 import './Footer.css'
 
