@@ -49,10 +49,34 @@ h4{
     font-optical-sizing: auto;
     font-size: 16px;
     font-weight: 400px;
-    color: white !important;
+    color:  #FAEBD7 !important;
 }
 body{
     background: #0D1117 !important;
     color: white;
 
+}
+img {
+    border-radius: 30px;
+  }
+
+  .custom-button {
+    display: inline-block;
+    background-color: transparent;
+    width: 150px;
+    height: 53px;
+    text-align: center;
+    line-height: 53px;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 40px;
+    border: 2px solid white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
 }
