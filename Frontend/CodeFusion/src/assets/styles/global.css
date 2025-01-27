@@ -1,43 +1,41 @@
 html, body {
     height: 100%;
     margin: 0;
-}
-
-#root {
+    }
+    #root {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensures the app takes full height */
-}
-
-h1{
+    }
+    h1{
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-size: 48px;
     font-weight: bold;
     color: white !important;
-}
-h2{
+    }
+    h2{
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-size: 36px;
     font-weight: bold;
     color: white !important;
-}
-h4{
+    }
+    h4{
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
     font-size: 24px;
     font-weight: bold;
     color: white !important;
-}
-.body-text{
+    }
+    .body-text{
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
     font-size: 20px;
     font-weight: 400px;
     color: white !important;
-}
-.body-text-bold{
+    }
+    .body-text-bold{
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
     font-size: 20px;
@@ -51,6 +49,13 @@ h4{
     font-weight: 400px;
     color:  #FAEBD7 !important;
 }
+.text{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400px;
+    color:  #FAEBD7 !important;
+    }
 body{
     background: #0D1117 !important;
     color: white;
@@ -71,12 +76,11 @@ img {
     font-weight: bold;
     border-radius: 30px;
     margin-top: 40px;
-    border: 2px solid white;
+    border: 2px solid #22B0DC;
     text-decoration: none;
     cursor: pointer;
-}
-
-.custom-button:hover {
+    }
+    .custom-button:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: black;
-}
+    }

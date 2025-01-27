@@ -6,6 +6,7 @@ import SignUp from "./pages/SignUp Page/SignUp";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ProblemsPage from "./pages/Problems Page/ProblemsPage";
 import Top50 from "./pages/Problems Page/Top50";
+import MainPage from "./pages/Main Page/MainPage"
 
 function App() {
   return (
@@ -13,10 +14,13 @@ function App() {
       <Router>
         <Header />
         <Routes>
+        <Route path="/" element={<MainPage />} />
           <Route path="/problems" element={<ProblemsPage />} />
           <Route path="/learning" element={<Top50 />} />
           <Route path="/question" element={<CodeCompiler />} />
           <Route path="/signup" element={<SignUp />} />
+          
+          
         </Routes>
 
         <Footer />
