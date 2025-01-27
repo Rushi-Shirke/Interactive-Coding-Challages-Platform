@@ -109,7 +109,11 @@ function Table() {
                     {row.status}
                   </td>
                   <td>
-                    <Link to={`/question/${index}`} className="text-white text-decoration-none">
+                    {/* <Link to={`/question/${index}`} className="text-white text-decoration-none"> */}
+                    <Link
+                      to={`/question`}
+                      className="text-white text-decoration-none"
+                    >
                       {row.title}
                     </Link>
                   </td>

@@ -13,12 +13,11 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<ProblemsPage />} />
+          <Route path="/problems" element={<ProblemsPage />} />
           <Route path="/learning" element={<Top50 />} />
+          <Route path="/question" element={<CodeCompiler />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
-
-        <CodeCompiler />
-        <SignUp />
 
         <Footer />
       </Router>
