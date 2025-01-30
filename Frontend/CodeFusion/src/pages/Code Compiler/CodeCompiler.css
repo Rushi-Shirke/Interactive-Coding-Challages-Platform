@@ -1,56 +1,47 @@
-.custom-button{
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #363636;
-    min-width: 100px;
-    color: white;
-    margin: 0 5px;
-    transition: 500ms;
-}
-.custom-button:hover{
-    background-color: green;
-    
-}
-
 /* CodeCompiler.css */
 
-
-
 .d-flex {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
 }
 
 .question {
-    display: flex;
-    justify-content: flex-start;
-    flex-grow: 1; /* Make sure the question takes up available space */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns the content to the left horizontally */
+  height: 100%;
 }
 
 .next-prev {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .left-icon {
-    font-size: 24px; /* Adjust the size of the icon */
-    color: white; /* Change color */
-    cursor: pointer; /* Make it look clickable */
-    margin-right: 10px; /* Optional: Add space between the icon and the button */
+  font-size: 24px; /* Adjust the size of the icon */
+  color: white; /* Change color */
+  cursor: pointer; /* Make it look clickable */
+  margin-right: 10px; /* Optional: Add space between the icon and the button */
+  margin-top: 10%;
 }
-.left-icon:hover{
-    color: green;
+.left-icon:hover {
+  color: #22b0dc;
 }
 
 .question-description {
-    width: 100%;
-    margin-top: 20px; /* Optional: Space between the question and description */
-    color: white;
+  width: 100%;
+  margin-top: 20px; /* Optional: Space between the question and description */
+  color: white;
+}
+.run-button,
+.save-button {
+  margin-top: 18px;
 }
 
-
-
-
+.editor-right {
+  width: 97%;
+}

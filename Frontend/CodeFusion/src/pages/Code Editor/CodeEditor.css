@@ -1,12 +1,4 @@
-.editor-main{
-    padding:50px;
-    min-height: 100vh;
-}
-.custom-button{
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #363636;
-
-    color: white;
-    
+.editor-main {
+  padding: 50px;
+  min-height: 100vh;
 }

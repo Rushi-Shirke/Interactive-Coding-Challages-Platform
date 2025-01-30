@@ -1,20 +1,21 @@
-import React, { useState } from 'react';
-import './SignUp.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./SignUp.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    password: '',
+    username: "",
+    email: "",
+    password: "",
   });
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    setError('');
+    setError("");
     setSuccess(false);
   };
 
@@ -22,30 +23,29 @@ const SignUp = () => {
     e.preventDefault();
     const { username, email, password } = formData;
 
-  
     if (!username || !email || !password) {
-      setError('All fields are required.');
+      setError("All fields are required.");
       return;
     }
 
     if (!/^[a-zA-Z\s]+$/.test(username)) {
-      setError('Full Name should contain only letters.');
+      setError("Full Name should contain only letters.");
       return;
     }
 
     if (!/\S+@\S+\.\S+/.test(email)) {
-      setError('Please enter a valid email address.');
+      setError("Please enter a valid email address.");
       return;
     }
 
     if (password.length < 6) {
-      setError('Password must be at least 6 characters long.');
+      setError("Password must be at least 6 characters long.");
       return;
     }
 
     // Simulate a successful sign-up
     setSuccess(true);
-    setFormData({ username: '', email: '', password: '' });
+    setFormData({ username: "", email: "", password: "" });
   };
 
   return (
@@ -64,7 +64,9 @@ const SignUp = () => {
               <div className="custom-div">
                 <h2>
                   JOIN US <br />
-                  AND CREATE A <span className="highlight">CODE FUSION</span>{' '}
+                  AND CREATE A <span className="highlight">
+                    CODE FUSION
+                  </span>{" "}
                   ACCOUNT
                 </h2>
               </div>
@@ -103,12 +105,14 @@ const SignUp = () => {
                     <p className="success-message">Sign-up successful!</p>
                   )}
                   <div className="button-container">
-                    <button type="submit" className="custom-button signup">
+                    <button type="submit" className="custom-button-blue">
                       SIGN UP
                     </button>
-                    <a href="Login.jsx" className="custom-button login">
-                      LOGIN
-                    </a>
+                    <Link to="/login">
+                      <button type="submit" className="custom-button">
+                        LOGIN
+                      </button>
+                    </Link>
                   </div>
                 </form>
               </div>
@@ -121,15 +125,3 @@ const SignUp = () => {
 };
 
 export default SignUp;
-
-
-
-
-
-
-
-
-
-
-
-

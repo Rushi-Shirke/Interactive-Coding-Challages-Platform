@@ -1,18 +1,12 @@
 import React from "react";
-import './CodeCompiler.css';
+import "./CodeCompiler.css";
 import CodeEditor from "../Code Editor/CodeEditor";
-import Question from "./Question";
 
-
-function CodeCompiler(){
-    return(
-
-        <>
-        <Question/>
-        <CodeEditor />
-        
-        
-        </>
-    );
+function CodeCompiler() {
+  return (
+    <>
+      <CodeEditor />
+    </>
+  );
 }
-export default CodeCompiler
+export default CodeCompiler;

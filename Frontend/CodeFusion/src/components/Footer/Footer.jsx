@@ -8,14 +8,16 @@ function Footer() {
       <footer className="footer py-2">
         <div className="container-fluid">
           <div className="row">
-            <div className="footer-ft col-12 d-flex justify-content-center align-items-center">
-              <Link to="/">
-                <img
-                  className="footer-logo"
-                  src={logo}
-                  alt="CodeFusionLogo"
-                ></img>
-              </Link>
+            <div className="footer-ft col-12">
+              <div className="img-center">
+                <Link to="/">
+                  <img
+                    className="footer-logo"
+                    src={logo}
+                    alt="CodeFusionLogo"
+                  ></img>
+                </Link>
+              </div>
             </div>
             <div className="footer-ft col-12">
               <ul>

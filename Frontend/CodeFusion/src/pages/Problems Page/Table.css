@@ -1,4 +1,15 @@
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Optional: smooth scrolling on mobile */
+}
+
+.custom-table {
+  width: 100%;
+  min-width: 600px; /* Adjust as per your table's content */
+}
+
 /* Calendar.css */
+
 .calendar-container {
   width: 300px;
   margin: 20px auto;
@@ -9,7 +20,7 @@
 .react-calendar {
   width: 100%;
   max-width: 400px;
-  background-color: #0D1117; /* Dark background */
+  background-color: #0d1117; /* Dark background */
   border: 1px solid #ddd;
   border-radius: 15px;
   color: white; /* Set text color inside calendar to white */
@@ -52,4 +63,8 @@
   color: white; /* Set the month and year label text color to white */
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.pagination button:hover {
+  background-color: #22b0dc;
 }

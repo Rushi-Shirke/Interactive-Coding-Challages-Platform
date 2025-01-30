@@ -88,58 +88,60 @@ function Table() {
       <Row>
         {/* Table Section */}
         <Col md={9} sm={12}>
-          <table className="table table-dark table-striped custom-table">
-            <thead>
-              <tr>
-                <th>Status</th>
-                <th>Title</th>
-                <th>Solution</th>
-                <th>Difficulty</th>
-                <th>Frequency</th>
-              </tr>
-            </thead>
-            <tbody>
-              {currentData.map((row, index) => (
-                <tr key={index}>
-                  <td
-                    className={
-                      row.status === "New" ? "text-info" : "text-warning"
-                    }
-                  >
-                    {row.status}
-                  </td>
-                  <td>
-                    {/* <Link to={`/question/${index}`} className="text-white text-decoration-none"> */}
-                    <Link
-                      to={`/question`}
-                      className="text-white text-decoration-none"
-                    >
-                      {row.title}
-                    </Link>
-                  </td>
-                  <td>
-                    {row.solution ? (
-                      <span className="text-success">✔</span>
-                    ) : (
-                      <span className="text-danger">✖</span>
-                    )}
-                  </td>
-                  <td
-                    className={
-                      row.difficulty === "Easy"
-                        ? "text-success"
-                        : row.difficulty === "Medium"
-                        ? "text-warning"
-                        : "text-danger"
-                    }
-                  >
-                    {row.difficulty}
-                  </td>
-                  <td>{row.frequency}</td>
+          <div className="table-wrapper">
+            <table className="table table-dark table-striped custom-table">
+              <thead>
+                <tr>
+                  <th>Status</th>
+                  <th>Title</th>
+                  <th>Solution</th>
+                  <th>Difficulty</th>
+                  <th>Frequency</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {currentData.map((row, index) => (
+                  <tr key={index}>
+                    <td
+                      className={
+                        row.status === "New" ? "text-info" : "text-warning"
+                      }
+                    >
+                      {row.status}
+                    </td>
+                    <td>
+                      {/* <Link to={`/question/${index}`} className="text-white text-decoration-none"> */}
+                      <Link
+                        to={`/question`}
+                        className="text-white text-decoration-none"
+                      >
+                        {row.title}
+                      </Link>
+                    </td>
+                    <td>
+                      {row.solution ? (
+                        <span className="text-success">✔</span>
+                      ) : (
+                        <span className="text-danger">✖</span>
+                      )}
+                    </td>
+                    <td
+                      className={
+                        row.difficulty === "Easy"
+                          ? "text-success"
+                          : row.difficulty === "Medium"
+                          ? "text-warning"
+                          : "text-danger"
+                      }
+                    >
+                      {row.difficulty}
+                    </td>
+                    <td>{row.frequency}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
 
           {/* Pagination */}
           <nav>
