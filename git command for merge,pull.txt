@@ -1,0 +1,19 @@
+1) to clone single branch // i am cloning testing branch
+
+git clone -b testing --single-branch https://github.com/Rushi-Shirke/Interactive-Coding-Challages-Platform.git
+
+2) to add origin url
+git remote add origin https://github.com/Rushi-Shirke/Interactive-Coding-Challages-Platform.git
+
+3) to set origin url (optional : if url not correct)
+git remote set-url origin https://github.com/Rushi-Shirke/Interactive-Coding-Challages-Platform.git
+
+4) to fetch data from url
+git fetch origin
+
+5) to pull any branch from fetch data // i am pulling testing as new files( previouly folder was empty)
+git pull origin testing
+
+6) to merge any branch in your folder
+ git merge origin/mukul
+
