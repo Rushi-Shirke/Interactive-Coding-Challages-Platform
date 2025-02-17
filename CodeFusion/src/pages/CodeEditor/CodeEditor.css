@@ -1,0 +1,14 @@
+.editor-main {
+  padding: 50px;
+  min-height: 100vh;
+}
+.container p {
+  color: white;
+}
+.container hr {
+  color: white;
+}
+
+.container .button-margin .chakra-button {
+  margin-top: 150px;
+}

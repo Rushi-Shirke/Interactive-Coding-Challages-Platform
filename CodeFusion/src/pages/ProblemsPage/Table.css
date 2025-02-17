@@ -1,0 +1,70 @@
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Optional: smooth scrolling on mobile */
+}
+
+.custom-table {
+  width: 100%;
+  min-width: 600px; /* Adjust as per your table's content */
+}
+
+/* Calendar.css */
+
+.calendar-container {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  color: white; /* Set text color to white */
+}
+
+.react-calendar {
+  width: 100%;
+  max-width: 400px;
+  background-color: #0d1117; /* Dark background */
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  color: white; /* Set text color inside calendar to white */
+}
+
+.react-calendar__navigation {
+  color: white; /* Set navigation arrows and month name to white */
+  background-color: #1a1d23; /* Dark background for navigation */
+}
+
+.react-calendar__navigation__prev,
+.react-calendar__navigation__next {
+  color: white; /* Pagination arrows color */
+  font-size: 1.5em; /* Optional: adjust size of the arrows */
+}
+
+.react-calendar__navigation__prev:hover,
+.react-calendar__navigation__next:hover {
+  color: #007bff; /* Change color on hover for better visibility */
+}
+
+.react-calendar__navigation__prev2,
+.react-calendar__navigation__next2 {
+  color: white; /* Left and right navigation arrows color */
+}
+
+.react-calendar__month-view__days__day {
+  color: white; /* Day numbers text color */
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  color: white; /* Weekdays (Mon, Tue, etc.) text color */
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #777; /* Neighboring month days text color */
+}
+
+.react-calendar__navigation__label {
+  color: white; /* Set the month and year label text color to white */
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.pagination button:hover {
+  background-color: #22b0dc;
+}

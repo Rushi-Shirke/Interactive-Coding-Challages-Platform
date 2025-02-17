@@ -1,0 +1,37 @@
+.main-container .table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
+}
+
+.custom-table {
+  width: 100%;
+  min-width: 600px; /* Prevents excessive shrinkage */
+  white-space: nowrap; /* Prevents text from breaking in narrow views */
+}
+
+/* Pagination Styling */
+.pagination {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination .page-link {
+  min-width: 40px;
+  padding: 6px 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Responsive Styles for Small Screens (iPhone SE, etc.) */
+@media (max-width: 375px) {
+  .custom-table th,
+  .custom-table td {
+    font-size: 12px; /* Reduce font size */
+    padding: 6px; /* Reduce padding for better fit */
+  }
+
+  .pagination .page-link {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}

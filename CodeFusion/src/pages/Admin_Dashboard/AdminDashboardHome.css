@@ -1,0 +1,27 @@
+.total {
+  border-radius: 30px;
+  background: #363636;
+  box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
+  display: flex;
+
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+.dificulty {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.dificulty .total {
+  width: 30%;
+}
+.d-flex {
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .dificulty .total {
+    width: 80%;
+  }
+}
