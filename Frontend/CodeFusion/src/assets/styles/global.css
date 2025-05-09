@@ -1,0 +1,117 @@
+/* General Resets and Structure */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the app takes full height */
+}
+
+body {
+  background: #0d1117 !important;
+  color: white;
+  font-family: "Roboto", serif; /* Default font for body */
+}
+
+/* Headings */
+h1 {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-size: 48px;
+  font-weight: bold;
+  color: white !important;
+}
+
+h2 {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-size: 36px;
+  font-weight: bold;
+  color: white !important;
+}
+
+h4 {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-size: 24px;
+  font-weight: bold;
+  color: white !important;
+}
+
+/* Text Styles */
+.body-text {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-weight: 400; /* Normal weight */
+  color: white !important;
+}
+
+.body-text-bold {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-weight: 600; /* Bold weight */
+  color: white !important;
+}
+
+.text-16,
+.text {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 400; /* Normal weight */
+  color: #faebd7 !important;
+}
+
+/* Buttons */
+.custom-button {
+  display: inline-block;
+  background-color: transparent;
+  width: 150px;
+  height: 53px;
+  text-align: center;
+
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 40px;
+  border: 2px solid #22b0dc;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 500ms;
+}
+.custom-button-blue {
+  display: inline-block;
+  background-color: #22b0dc;
+  width: 150px;
+  height: 53px;
+  text-align: center;
+
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 40px;
+
+  text-decoration: none;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.custom-button:hover {
+  background-color: #22b0dc;
+}
+.custom-button-blue:hover {
+  background-color: transparent;
+
+  border: 2px solid #22b0dc;
+}
+
+/* Images */
+img {
+  border-radius: 30px;
+}

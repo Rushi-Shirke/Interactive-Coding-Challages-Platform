@@ -1,0 +1,102 @@
+/* General Body Styling */
+body {
+  background: #0d1117;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  justify-content: space-around !important;
+}
+
+/* Card Styles */
+.custom-card {
+  border-radius: 15px;
+  height: 289px;
+  width: 254px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card Hover Effects */
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 2;
+}
+
+/* Overlay Effect */
+.custom-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  z-index: 1;
+}
+
+/* Background Images for Cards */
+.card-top50 {
+  background-image: url("../../assets/images/Top50.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-top75 {
+  background-image: url("../../assets/images/Top75.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-BegQue {
+  background-image: url("../../assets/images/BegQue.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card Content */
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.card-text {
+  font-size: 1.4rem;
+  color: white;
+  margin-top: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Buttons */
+.custom-card .custom-button-blue {
+  position: relative;
+  z-index: 2;
+  width: 200px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-card {
+    width: 90%;
+  }
+}

@@ -1,0 +1,94 @@
+.img-fluid {
+  width: 525px;
+  height: auto;
+}
+.img-1 {
+  width: 100%;
+  height: 400px;
+}
+.img-2 {
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+}
+.background-container {
+  position: relative;
+  overflow: hidden;
+}
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("src/assets/images/Back_Ground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
+}
+.home-heading {
+  font-size: 48px;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  color: #ffffff !important;
+  font-weight: bold;
+  text-align: center;
+}
+.home-sub-heading {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #faebd7 !important;
+  text-align: center;
+}
+.heading-section {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 30px;
+}
+
+.features-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 30px;
+  padding-top: 10px;
+  width: 50%;
+}
+.text {
+  list-style-type: disc !important; /* Forces the bullet points to appear */
+  padding-left: 20px; /* Ensures space for the bullet points */
+  margin: 0; /* Removes any default margin */
+}
+
+.text li {
+  margin-bottom: 10px; /* Adds space between list items */
+}
+.img-3 {
+  width: 100%;
+  height: auto;
+}
+.fade-in-effect {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.features {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* White background with 20% opacity */
+  border-radius: 30px; /* Rounded corners with a radius of 30px */
+}

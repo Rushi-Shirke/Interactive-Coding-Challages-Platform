@@ -1,0 +1,32 @@
+.question-form .container {
+  max-width: 700px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.question-form h2 {
+  color: black !important;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
